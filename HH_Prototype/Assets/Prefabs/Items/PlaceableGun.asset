@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f85170032aa834599e553940a39917, type: 3}
+  m_Name: PlaceableGun
+  m_EditorClassIdentifier: 
+  name: PlaceableGun
+  canBeEquipped: 1
+  gunType: 1
+  dmgType: 1
+  gunOffset: {x: 0, y: 1, z: 0}
+  muzzleOffset: {x: 0, y: 0, z: 0}
+  damage: 50
+  maxDistance: 30
+  spread: 5
+  bulletsPerShot: 5
+  fireRate: 1
+  bulletTrail: {fileID: 3130183669923959600, guid: 20b263bd2529f374882ea58bf9b82909, type: 3}
+  trailFadeDuration: 1
+  silenced: 0
+  currentAmmo: 30
+  magSize: 30
+  reloadTime: 0
+  gunGFX: {fileID: 3537503723109500789, guid: 95efe57c55e43854b9642a492ba01031, type: 3}
+  reloading: 0

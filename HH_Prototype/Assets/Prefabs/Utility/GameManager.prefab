@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3643664937230796963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3643664937230796965}
+  - component: {fileID: 3643664937230796962}
+  - component: {fileID: 3643664937230796966}
+  - component: {fileID: 3643664937230796967}
+  - component: {fileID: 3643664937230796964}
+  - component: {fileID: 3643664937230796985}
+  - component: {fileID: 3643664937230796984}
+  - component: {fileID: 7622267385841452453}
+  - component: {fileID: 694902768152102756}
+  - component: {fileID: 3496374316521685269}
+  - component: {fileID: 159935494858317810}
+  - component: {fileID: 165795585}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3643664937230796965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3643664937230796962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c9ff2d3f759d646b2fe1bbbafb8a7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 0}
+  - {fileID: 0}
+  melees:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  firstGunUnlockIndex: 1
+  unlockGunAsFirst: 1
+--- !u!114 &3643664937230796966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd04d175366d1a144bbf21513a4af18f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 0}
+  dayCycleLength: 300
+  nightCycleLength: 420
+  lerpSmoothing: 0.3
+  currentTime: 0
+  day: 0
+--- !u!114 &3643664937230796967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc457b75bd1c7e549b1e073ff79472c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  enemyPrefabs:
+  - {fileID: 526386277419675770, guid: 287f48885dfc3154b8601ed20547f594, type: 3}
+  - {fileID: 526386277419675770, guid: 287f48885dfc3154b8601ed20547f594, type: 3}
+  - {fileID: 958885266346098417, guid: 5d978299d0eddc14cbd146b085dc1f3c, type: 3}
+  - {fileID: 958885266346098417, guid: 5d978299d0eddc14cbd146b085dc1f3c, type: 3}
+  - {fileID: 958885266346098417, guid: 5d978299d0eddc14cbd146b085dc1f3c, type: 3}
+  - {fileID: 958885266346098417, guid: 5d978299d0eddc14cbd146b085dc1f3c, type: 3}
+  - {fileID: 958885266346098417, guid: 5d978299d0eddc14cbd146b085dc1f3c, type: 3}
+  - {fileID: 958885266346098417, guid: 5d978299d0eddc14cbd146b085dc1f3c, type: 3}
+  - {fileID: 3543834217052639030, guid: 85b83229f34f21d4e883a0e288c2d68a, type: 3}
+  - {fileID: 3543834217052639030, guid: 85b83229f34f21d4e883a0e288c2d68a, type: 3}
+  - {fileID: 3543834217052639030, guid: 85b83229f34f21d4e883a0e288c2d68a, type: 3}
+  - {fileID: 3543834217052639030, guid: 85b83229f34f21d4e883a0e288c2d68a, type: 3}
+  - {fileID: 3543834217052639030, guid: 85b83229f34f21d4e883a0e288c2d68a, type: 3}
+  - {fileID: 4234267153656434124, guid: 9198e43fd0409864fab29fab1a850b93, type: 3}
+  - {fileID: 4234267153656434124, guid: 9198e43fd0409864fab29fab1a850b93, type: 3}
+  - {fileID: 4234267153656434124, guid: 9198e43fd0409864fab29fab1a850b93, type: 3}
+  - {fileID: 5112640746438291733, guid: 4020c361c201f1149a6404b06eee6615, type: 3}
+  - {fileID: 5112640746438291733, guid: 4020c361c201f1149a6404b06eee6615, type: 3}
+  - {fileID: 5112640746438291733, guid: 4020c361c201f1149a6404b06eee6615, type: 3}
+  - {fileID: 5112640746438291733, guid: 4020c361c201f1149a6404b06eee6615, type: 3}
+  enemiesToSpawn: 3
+  spawnTime: 45
+  spawn: 1
+--- !u!114 &3643664937230796964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4595641867d246144bb90f61debc3d2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pooledObjectPrefabs:
+  - {fileID: 8988377975366585476, guid: 20b263bd2529f374882ea58bf9b82909, type: 3}
+  - {fileID: 958885266346098417, guid: 5d978299d0eddc14cbd146b085dc1f3c, type: 3}
+  - {fileID: 5112640746438291733, guid: 4020c361c201f1149a6404b06eee6615, type: 3}
+  - {fileID: 526386277419675770, guid: 287f48885dfc3154b8601ed20547f594, type: 3}
+  - {fileID: 4234267153656434124, guid: 9198e43fd0409864fab29fab1a850b93, type: 3}
+  - {fileID: 3543834217052639030, guid: 85b83229f34f21d4e883a0e288c2d68a, type: 3}
+  poolSize: 20
+--- !u!114 &3643664937230796985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3d5c098ad24b24439fe6bf7cddec6b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3643664937230796984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520f8050ceed9784f8805444d45eb4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuUI: {fileID: 0}
+--- !u!114 &7622267385841452453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7173dc366a38cdf4d9561653062b754f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoints:
+  - {fileID: 0}
+  pickupsToSpawn: 4
+  index: 1
+--- !u!114 &694902768152102756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9668b72b7ebb6a347af07bdc8b4b915e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recipes:
+  - resultingObject: {fileID: 0}
+    ingredients:
+    - ingredientType: 3
+      amount: 5
+  - resultingObject: {fileID: 0}
+    ingredients:
+    - ingredientType: 3
+      amount: 15
+--- !u!114 &3496374316521685269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb26a63db7b164418a1c0bef8829398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteText: {fileID: 0}
+  noteTexts:
+  - 'CONTROLS:                                                    1- Equip/Change
+    gun                                                                     2- Equip/change
+    Melee                     WASD-Movement                                                                                                          
+    Left Click-  Shoot/Swingweapon                                                                                                
+    R- RELOAD                                                                                  
+    ESC -  Menu/Crafting'
+--- !u!114 &159935494858317810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b09277fb47c2a4647ae90a90487114aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: []
+  sfx: []
+  sfxVolume: 50
+  musicVolume: 50
+  cycleThroughList: 0
+--- !u!114 &165795585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643664937230796963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aab04decac70a941be6609b770302ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
